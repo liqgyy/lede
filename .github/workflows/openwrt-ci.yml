@@ -103,12 +103,12 @@ jobs:
             CONFIG_TARGET_x86_64_Generic=y
             EOF
             
-            cat >> .config << EOF
-            CONFIG_PACKAGE_luci-app-samba=no
-            CONFIG_PACKAGE_autosamba=no
-            CONFIG_PACKAGE_samba36-server=no
-            CONFIG_PACKAGE_luci-app-cifsd=y
-            EOF
+            #cat >> .config << EOF
+            #CONFIG_PACKAGE_luci-app-samba=no
+            #CONFIG_PACKAGE_autosamba=no
+            #CONFIG_PACKAGE_samba36-server=no
+            #CONFIG_PACKAGE_luci-app-cifsd=y
+            #EOF
             
             # samba扩展
             #
