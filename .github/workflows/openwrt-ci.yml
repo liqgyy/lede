@@ -104,12 +104,12 @@ jobs:
            EOF
 
            # samba扩展
-           cat >> .config <<EOF
-           CONFIG_PACKAGE_luci-app-samba is not set
-           CONFIG_PACKAGE_autosamba is not set
-           CONFIG_PACKAGE_samba36-server is not set
-           CONFIG_PACKAGE_luci-app-cifsd=y
-           EOF
+           #cat >> .config <<EOF
+           #CONFIG_PACKAGE_luci-app-samba is not set
+           #CONFIG_PACKAGE_autosamba is not set
+           #CONFIG_PACKAGE_samba36-server is not set
+           #CONFIG_PACKAGE_luci-app-cifsd=y
+           #EOF
            
           # 固件压缩:
           # cat >> .config <<EOF
