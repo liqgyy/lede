@@ -111,15 +111,11 @@ jobs:
           # samba扩展
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-cifsd=y
-          CONFIG_PACKAGE_luci-app-samba is not set
-          CONFIG_PACKAGE_autosamba is not set
-          CONFIG_PACKAGE_samba36-server is not set
-          CONFIG_PACKAGE_luci-app-samba4 is not set
           EOF
           
           # MWAN3分流助手
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-mwan3=y
+          CONFIG_PACKAGE_luci-app-mwan3HELP=y
           EOF
           
           # ZeroTier内网穿透
