@@ -110,6 +110,9 @@ jobs:
           
           # samba扩展
           cat >> .config <<EOF
+          CONFIG_PACKAGE_luci-app-samba=no
+          CONFIG_PACKAGE_autosamba=no
+          CONFIG_PACKAGE_samba36-server=no
           CONFIG_PACKAGE_luci-app-cifsd=y
           EOF
           
