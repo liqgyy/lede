@@ -122,6 +122,11 @@ jobs:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-zerotier=y
           EOF
+          
+          # smartdns
+          cat >> .config <<EOF
+          CONFIG_PACKAGE_luci-app-smartdns=y
+          EOF
 
           # 编译UEFI固件:
           # cat >> .config <<EOF
