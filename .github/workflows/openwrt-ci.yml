@@ -52,7 +52,7 @@ jobs:
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
 
           df -h
-
+      
       - name: Update feeds
         run: |
           ./scripts/feeds update -a
@@ -118,17 +118,12 @@ jobs:
           
           # MWAN3分流助手
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-mwan3HELP=y
+          CONFIG_PACKAGE_luci-app-mwan3helper=y
           EOF
           
           # ZeroTier内网穿透
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-zerotier=y
-          EOF
-          
-          # smartdns
-          cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-smartdns=y
           EOF
 
           # 编译UEFI固件:
