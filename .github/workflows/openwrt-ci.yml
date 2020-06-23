@@ -126,9 +126,9 @@ jobs:
           CONFIG_PACKAGE_luci-app-zerotier=y
           EOF
           
-          cat >> .config <<EOF
-          CONFIG_PACKAGE_curl=y
-          EOF
+          # cat >> .config <<EOF
+          # CONFIG_PACKAGE_curl=y
+          # EOF
 
           # 编译UEFI固件:
           # cat >> .config <<EOF
